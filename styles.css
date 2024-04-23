@@ -46,8 +46,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 55vh;
+  height: 60vh;
 }
+
+img{
+  vertical-align: sub;
+  margin-right: .75rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 1rem;
+  color: var(--clr-paleBlue);
+  padding: 0 1rem;
+}
+
 
 .container {
   max-width: 375px;
@@ -55,7 +71,7 @@ main {
 
 .resultsContainer {
   text-align: center;
-  background-color: var(--clr-violetBlue);
+  background: linear-gradient(var(--clr-ltSlateBlue),var(--clr-ltRoyalBlue));
   color: var(--clr-white);
   padding: 2rem;
   border-radius: 0 0 1.5rem 1.5rem;
@@ -63,24 +79,26 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: .5rem;
 }
 
 .scoreTotal {
-  background-color: var(--clr-cobalt);
+  background: linear-gradient(hsla(241, 72%, 46%, .6), hsla(256, 72%, 46%, .1));
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 
 .summaryContainer {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   gap: 1rem;
 }
 
@@ -140,12 +158,24 @@ main {
   opacity: 0.5;
   margin-left: 0.25rem;
 }
+.summaryTxt{
+  font-size: 1.25rem;
+  margin-bottom: .25rem;
+}
+
+.resultsContainer h3, .resultsContainer span{
+  color: var(--clr-paleBlue);
+}
+
+.resultsContainer span{
+  opacity: .6;
+}
 
 .continue {
   text-decoration: none;
   color: var(--clr-white);
   background-color: var(--clr-dkGrayBlue);
-  margin-top: 1rem;
+  margin-top: .5rem;
   text-align: center;
   padding: 1rem 2rem;
   border-radius: 3rem;
