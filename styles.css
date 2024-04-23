@@ -46,7 +46,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
+  height: 100vh;
 }
 
 img{
@@ -181,6 +181,10 @@ p{
   border-radius: 3rem;
 }
 
+.continue:hover{
+  background: linear-gradient(var(--clr-ltSlateBlue),var(--clr-ltRoyalBlue));
+}
+
 /* pre-included attribution css moved from index <style> */
 .attribution {
   font-size: 11px;
@@ -188,4 +192,51 @@ p{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+/* non-mobile settings */
+@media (min-width: 673px) {
+  main{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+    padding: 0 .5rem;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 450px;
+    max-width: 700px;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 16px 24px;
+  }
+
+  .resultsContainer{
+    height: 450px;
+    width: 300px;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .summaryContainer{
+    height: 400px;
+    margin: 0;
+    padding: 0 2rem;
+    width: 350px;
+  }
+
+  .scoreTotal{
+    width: 175px;
+    height: 175px;
+    margin:  2rem 0;
+  }
 }
